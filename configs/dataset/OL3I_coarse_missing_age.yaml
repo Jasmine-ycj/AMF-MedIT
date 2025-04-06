@@ -1,0 +1,46 @@
+# @package _global_
+defaults:
+ - _self_
+
+target: OL3I
+task: classification
+
+num_classes: 2
+weights:
+live_loading: False
+delete_segmentation: False
+balanced_accuracy: False
+eval_metric: auc
+data_orig:
+low_data_splits: ['']
+
+labels_train: OL3I_labels_train.pt 
+labels_val: OL3I_labels_val.pt 
+
+data_train_imaging: train_images.pt
+data_val_imaging: val_images.pt
+
+data_train_tabular: OL3I_features_train_missing_age.csv
+data_val_tabular: OL3I_features_val_missing_age.csv
+
+field_lengths_tabular: OL3I_tabular_lengths.pt
+
+
+data_train_eval_tabular: OL3I_features_train_missing_age.csv
+labels_train_eval_tabular: OL3I_labels_train.pt
+
+data_val_eval_tabular: OL3I_features_val_missing_age.csv
+labels_val_eval_tabular: OL3I_labels_val.pt
+
+data_test_eval_tabular: OL3I_features_test_missing_age.csv
+labels_test_eval_tabular: OL3I_labels_test.pt 
+
+
+data_train_eval_imaging: train_images.pt
+labels_train_eval_imaging: OL3I_labels_train.pt
+
+data_val_eval_imaging: val_images.pt
+labels_val_eval_imaging: OL3I_labels_val.pt
+
+data_test_eval_imaging: test_images.pt
+labels_test_eval_imaging: OL3I_labels_test.pt 

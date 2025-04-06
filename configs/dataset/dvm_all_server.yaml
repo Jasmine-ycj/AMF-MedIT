@@ -1,0 +1,46 @@
+# @package _global_
+defaults:
+ - _self_
+
+target: dvm
+task: classification
+
+num_classes: 101
+weights:
+live_loading: False
+delete_segmentation: False
+balanced_accuracy: False
+eval_metric: acc
+data_orig:
+low_data_splits: ['']
+
+labels_train: labels_model_all_train_all_views.pt 
+labels_val: labels_model_all_val_all_views.pt 
+
+data_train_imaging: train_images_all_views.pt
+data_val_imaging: val_images_all_views.pt
+
+data_train_tabular: dvm_features_train_noOH_all_views.csv
+data_val_tabular: dvm_features_val_noOH_all_views.csv
+
+field_lengths_tabular: tabular_lengths_all_views.pt
+
+
+data_train_eval_tabular: dvm_features_train_noOH_all_views.csv
+labels_train_eval_tabular: labels_model_all_train_all_views.pt 
+
+data_val_eval_tabular: dvm_features_val_noOH_all_views.csv
+labels_val_eval_tabular: labels_model_all_val_all_views.pt 
+
+data_test_eval_tabular: dvm_features_test_noOH_all_views.csv 
+labels_test_eval_tabular: labels_model_all_test_all_views.pt 
+
+
+data_train_eval_imaging: train_images_all_views.pt
+labels_train_eval_imaging: labels_model_all_train_all_views.pt
+
+data_val_eval_imaging: val_images_all_views.pt
+labels_val_eval_imaging: labels_model_all_val_all_views.pt
+
+data_test_eval_imaging: test_images_all_views.pt
+labels_test_eval_imaging: labels_model_all_test_all_views.pt
