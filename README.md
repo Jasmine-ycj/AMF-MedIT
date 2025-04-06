@@ -44,11 +44,22 @@ conda env create --file environment.yaml
   - Preprocessing notebook: [`./data/create_DVM_dataset.ipynb`](./data/create_DVM_dataset.ipynb)
 
 ## Training
+To start training, simply run:
+
+```bash
+python run.py
+```
 
 ### Multimodal Pretraining
+We provide the config files for contrastive pretraining on both datasets:
+- OL3I: [`./configs/config_pretrain_OL3I.yaml`](./configs/config_pretrain_OL3I.yaml)
+- DVM: [`./configs/config_pretrain_DVM.yaml`](./configs/config_pretrain_DVM.yaml)
 
 ### MUltimodal Fine-tuning
 
 ### Supervised training for unimodal models
+
+
+## Checkpoints
 
 ## Acknowledgments
