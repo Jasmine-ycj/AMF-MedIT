@@ -32,7 +32,7 @@ conda env create --file environment.yaml
 
 ## Data
 ### 1. OL3I Dataset
-- **Download from**: [Stanford AIMI Shared Datasets](https://aimi.stanford.edu/research/public-datasets)
+- **Download from**: [Stanford AIMI Shared Datasets](https://stanfordaimi.azurewebsites.net/datasets/3263e34a-252e-460f-8f63-d585a9bfecfc)
 - **Description**: A medical multimodal dataset including imaging and structured clinical/tabular data.
 - **Preprocessing**:
   - Preprocessing notebook: [`./data/create_OL3I_dataset.ipynb`](./data/create_OL3I_dataset.ipynb)
@@ -41,7 +41,7 @@ conda env create --file environment.yaml
 - **Download from**: [DVM Car Dataset: A Large-Scale Dataset for Automotive Applications](https://deepvisualmarketing.github.io/)
 - **Description**: A multimodal dataset combining images and marketing-related tabular features for automotive analysis.
 - **Preprocessing**:
-  - Preprocessing notebook: [`./data/create_DVM_dataset.ipynb`](./data/create_DVM_dataset.ipynb)
+  - Preprocessing notebook: [`./data/create_DVM_dataset.ipynb`](./data/create_dvm_dataset.ipynb)
 
 ## Training
 To start training, run:
