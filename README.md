@@ -9,9 +9,9 @@ This repository provides a **PyTorch implementation** of **AMF-MedIT**, an effic
 This project is built upon [MMCL](https://github.com/paulhager/MMCL-Tabular-Imaging).
 
 Key implementations:
-   - The proposed core module, **AMF module**, is implemented in [`./models/FusionModule.py`](./model/FusionModule.py)
-   - Another contribution of our framework, the **FT-Mamba** encoder for tabular data, is implemented in [`./models/FT-Mamba.py`](./model/FT-Mamba.py)
-   - The complete **AMF-MedIT model** structure can be found in [`./models/FusionMultiModalModel.py`](./model/FusionMultiModalModel.py)
+   - The proposed core module, **AMF module**, is implemented in [`./models/FusionModule.py`](./models/FusionModule.py)
+   - Another contribution of our framework, the **FT-Mamba** encoder for tabular data, is implemented in [`./models/FT-Mamba.py`](./models/FT-Mamba.py)
+   - The complete **AMF-MedIT model** structure can be found in [`./models/FusionMultiModalModel.py`](./models/FusionMultiModalModel.py)
 
 ## Requirements
 
