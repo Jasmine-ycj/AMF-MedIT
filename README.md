@@ -10,7 +10,7 @@ This project is built upon [MMCL](https://github.com/paulhager/MMCL-Tabular-Imag
 
 Key implementations:
    - The proposed core module, **AMF module**, is implemented in [`./models/FusionModule.py`](./models/FusionModule.py)
-   - Another contribution of our framework, the **FT-Mamba** encoder for tabular data, is implemented in [`./models/FT-Mamba.py`](./models/FT-Mamba.py)
+   - Another contribution of our framework, the **FT-Mamba** encoder for tabular data, is implemented in [`./models/FTMamba.py`](./models/FTMamba.py)
    - The complete **AMF-MedIT model** structure can be found in [`./models/FusionMultiModalModel.py`](./models/FusionMultiModalModel.py)
 
 ## Requirements
